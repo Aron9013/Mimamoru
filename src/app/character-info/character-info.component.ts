@@ -8,7 +8,7 @@ import { Character } from '../character';
 @Component({
     selector: 'app-character-info',
     templateUrl: './character-info.component.html',
-    styleUrls: ['./character-info.component.css']
+    styleUrls: ['./character-info.component.scss']
 })
 export class CharacterInfoComponent implements OnInit {
     character: Character;
