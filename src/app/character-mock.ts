@@ -1083,7 +1083,7 @@ export const CHARACTERS: Character[] = [
                     name: 'Pulse Pistols',
                     description: 'Tracer rapid-fires both of her pistols.',
                     icon: '',
-                    type: 'Ability'
+                    type: 'Weapon'
                 },
                 {
                     name: 'Blink',
