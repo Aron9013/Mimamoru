@@ -1,0 +1,19 @@
+<div>
+    <h1>{{character.name}}</h1>
+    <h3>{{character.overview.role}}</h3>
+    <p>{{character.overview.description}}</p>
+
+    <div>
+        <h3>{{character.name}}'s skills & abilities</h3>
+        <div *ngFor="let skill of character.overview.skills">
+            <h4>{{skill.name}}</h4>
+            <p>{{skill.description}}</p>
+            <p>{{skill.type}}</p>
+        </div>
+    </div>
+
+    <div>
+        <h3>{{character.story.biography.realName}}</h3>
+    </div>
+
+</div>
