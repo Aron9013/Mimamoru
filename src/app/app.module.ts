@@ -10,7 +10,7 @@ import { PlayerStatsComponent } from './player-stats/player-stats.component';
 import { ErrorComponent } from './error/error.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CharacterInfoComponent } from './character-info/character-info.component';
-import { CharacterService } from './character.service';
+import { CharacterService } from './services/character.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
