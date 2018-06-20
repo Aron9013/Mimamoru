@@ -1,4 +1,4 @@
-export class MapType {
+export class GameMode {
     type: string;
     icon: string;
     description: string;

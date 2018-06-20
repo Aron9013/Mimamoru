@@ -1,6 +1,6 @@
-import { Map, MapType } from './map-template';
+import { Map, GameMode } from './map-template';
 
-export const MAPTYPES: MapType[] = [
+export const GAMEMODES: GameMode[] = [
     {
         type: 'Arena',
         icon: '',
