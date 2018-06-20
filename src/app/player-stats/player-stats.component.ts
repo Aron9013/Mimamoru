@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class PlayerStatsComponent implements OnInit {
     private _httpClient: HttpClient;
 
-    private tag = 'XiQi19';
-    private platform = 'psn';
-    private region = 'eu';
+    @Input() tag;
+    @Input() platform = 'pc';
+    @Input() region = 'us';
 
     constructor(httpClient: HttpClient) {
         this._httpClient = httpClient;
