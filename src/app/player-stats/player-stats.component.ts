@@ -36,4 +36,8 @@ export class PlayerStatsComponent implements OnInit {
         });
     }
 
+    // https://github.com/Fuyukai/OWAPI
+    // https://ow-api.herokuapp.com/docs/
+    // https://ow-api.com/docs/#introduction  <-- doesn't seem to get any stats out?
+
 }
