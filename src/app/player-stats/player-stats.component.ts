@@ -9,17 +9,30 @@ import { HttpClient } from '@angular/common/http';
 export class PlayerStatsComponent implements OnInit {
     private _httpClient: HttpClient;
 
+    private tag = 'XiQi19';
+    private platform = 'psn';
+    private region = 'eu';
+
     constructor(httpClient: HttpClient) {
         this._httpClient = httpClient;
     }
 
     ngOnInit() {
-        const battleTag = 'Xiso-21945';
-        const platform = 'psn';
-        const region = 'eu';
+        // this._httpClient.get<any>(`http://ow-api.herokuapp.com/stats/${platform}/${region}/${tag}`).subscribe((data) => {
+        //     console.log('stats', data);
+        // });
+    }
 
-        this._httpClient.get<any>(`https://ow-api.com/v1/stats/${platform}/${region}/${battleTag}/profile`).subscribe((data) => {
-            console.log(data);
+    getStats(): void {
+        this._httpClient.get<any>(`https://owapi.net/api/v3/u/${this.tag}/stats?platform=${this.platform}`).subscribe((data) => {
+            console.log('stats', data);
+        });
+    }
+
+    getHeroStats(): void {
+        this._httpClient.get<any>(`https://owapi.net/api/v3/u/${this.tag}/heroes?platform=${this.platform}`).subscribe((data) => {
+            console.log('hero', data);
+            console.log('dva', data.any.heroes.stats.competitive.dva);
         });
     }
 
