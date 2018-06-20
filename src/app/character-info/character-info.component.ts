@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { CharacterService } from '../services/character.service';
-import { Character } from '../characters/character';
+import { CharacterTemplate } from '../characters/character-template';
 
 @Component({
     selector: 'app-character-info',
@@ -11,7 +11,7 @@ import { Character } from '../characters/character';
     styleUrls: ['./character-info.component.scss']
 })
 export class CharacterInfoComponent implements OnInit {
-    character: Character;
+    character: CharacterTemplate;
     private _route: ActivatedRoute;
     private _location: Location;
     private _characterService: CharacterService;

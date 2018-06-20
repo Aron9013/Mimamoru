@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from './character';
+import { CharacterTemplate } from './character-template';
 import { CharacterService } from '../services/character.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CharacterService } from '../services/character.service';
 })
 export class CharactersComponent implements OnInit {
 
-    characters: Character[];
+    characters: CharacterTemplate[];
 
     private _characterService: CharacterService;
 

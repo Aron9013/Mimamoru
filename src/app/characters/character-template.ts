@@ -28,10 +28,11 @@ export class Story {
     backStory: string;
 }
 
-export class Character {
+export class CharacterTemplate {
     id: string;
     name: string;
     portraitImage: string;
+    color: string;
     overview: Overview;
     story: Story;
 }

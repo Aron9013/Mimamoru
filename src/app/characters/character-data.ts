@@ -1,10 +1,11 @@
-import { Character } from './character';
+import { CharacterTemplate } from './character-template';
 
-export const CHARACTERS: Character[] = [
+export const CHARACTERS: CharacterTemplate[] = [
     {
         id: 'ana',
         name: 'Ana',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Support',
             roleIcon: '',
@@ -54,6 +55,7 @@ export const CHARACTERS: Character[] = [
         id: 'bastion',
         name: 'Bastion',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Defense',
             roleIcon: '',
@@ -115,6 +117,7 @@ export const CHARACTERS: Character[] = [
         id: 'brigitte',
         name: 'Brigitte',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Support',
             roleIcon: '',
@@ -182,6 +185,7 @@ export const CHARACTERS: Character[] = [
         id: 'dva',
         name: 'D.Va',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Tank',
             roleIcon: '',
@@ -249,6 +253,7 @@ export const CHARACTERS: Character[] = [
         id: 'doomfist',
         name: 'Doomfist',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -310,6 +315,7 @@ export const CHARACTERS: Character[] = [
         id: 'genji',
         name: 'Genji',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -365,6 +371,7 @@ export const CHARACTERS: Character[] = [
         id: 'hanzo',
         name: 'Hanzo',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Defense',
             roleIcon: '',
@@ -426,6 +433,7 @@ export const CHARACTERS: Character[] = [
         id: 'junkrat',
         name: 'Junkrat',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Defense',
             roleIcon: '',
@@ -481,6 +489,7 @@ export const CHARACTERS: Character[] = [
         id: 'lucio',
         name: 'Lúcio',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Support',
             roleIcon: '',
@@ -536,6 +545,7 @@ export const CHARACTERS: Character[] = [
         id: 'mccree',
         name: 'McCree',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -585,6 +595,7 @@ export const CHARACTERS: Character[] = [
         id: 'mei',
         name: 'Mei',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Defense',
             roleIcon: '',
@@ -634,6 +645,7 @@ export const CHARACTERS: Character[] = [
         id: 'mercy',
         name: 'Mercy',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Support',
             roleIcon: '',
@@ -701,6 +713,7 @@ export const CHARACTERS: Character[] = [
         id: 'moira',
         name: 'Moira',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Support',
             roleIcon: '',
@@ -750,6 +763,7 @@ export const CHARACTERS: Character[] = [
         id: 'orisa',
         name: 'Orisa',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Tank',
             roleIcon: '',
@@ -805,6 +819,7 @@ export const CHARACTERS: Character[] = [
         id: 'pharah',
         name: 'Pharah',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -860,6 +875,7 @@ export const CHARACTERS: Character[] = [
         id: 'reaper',
         name: 'Reaper',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -915,6 +931,7 @@ export const CHARACTERS: Character[] = [
         id: 'reinhardt',
         name: 'Reinhardt',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Tank',
             roleIcon: '',
@@ -970,6 +987,7 @@ export const CHARACTERS: Character[] = [
         id: 'roadhog',
         name: 'Roadhog',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Tank',
             roleIcon: '',
@@ -1019,6 +1037,7 @@ export const CHARACTERS: Character[] = [
         id: 'soldier76',
         name: 'Solider: 76',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Offense',
             roleIcon: '',
@@ -1074,6 +1093,7 @@ export const CHARACTERS: Character[] = [
         id: 'tracer',
         name: 'Tracer',
         portraitImage: '',
+        color: '',
         overview: {
             role: 'Attack',
             roleIcon: '',
