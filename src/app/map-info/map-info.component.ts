@@ -23,10 +23,10 @@ export class MapInfoComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.getCharacter();
+        this.getMap();
     }
 
-    getCharacter(): void {
+    getMap(): void {
         const id = this._route.snapshot.paramMap.get('id');
         this._mapService.getMap(id)
             .subscribe(map => this.map = map);
