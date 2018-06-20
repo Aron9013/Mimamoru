@@ -1,6 +1,6 @@
-import { CharacterTemplate } from './character-template';
+import { Character } from './character-template';
 
-export const CHARACTERS: CharacterTemplate[] = [
+export const CHARACTERS: Character[] = [
     {
         id: 'ana',
         name: 'Ana',

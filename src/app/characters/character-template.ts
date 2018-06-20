@@ -28,7 +28,7 @@ export class Story {
     backStory: string;
 }
 
-export class CharacterTemplate {
+export class Character {
     id: string;
     name: string;
     portraitImage: string;

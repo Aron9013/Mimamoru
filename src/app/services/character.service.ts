@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CharacterTemplate } from '../characters/character-template';
+import { Character } from '../characters/character-template';
 import { CHARACTERS } from '../characters/character-data';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
@@ -10,11 +10,11 @@ export class CharacterService {
     constructor() {
     }
 
-    getCharacters(): Observable<CharacterTemplate[]> {
+    getCharacters(): Observable<Character[]> {
         return of(CHARACTERS);
     }
 
-    getCharacter(id: string): Observable<CharacterTemplate> {
+    getCharacter(id: string): Observable<Character> {
         return of(CHARACTERS.find(character => character.id === id));
     }
 
