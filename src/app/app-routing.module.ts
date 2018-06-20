@@ -6,6 +6,7 @@ import { CharacterInfoComponent } from './character-info/character-info.componen
 import { MapsComponent } from './maps/maps.component';
 import { PlayerStatsComponent } from './player-stats/player-stats.component';
 import { ErrorComponent } from './error/error.component';
+import { MapInfoComponent } from './map-info/map-info.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'characters', component: CharactersComponent },
     { path: 'characters/:id', component: CharacterInfoComponent },
     { path: 'maps', component: MapsComponent },
+    { path: 'maps/:id', component: MapInfoComponent },
     { path: 'player-stats', component: PlayerStatsComponent },
     { path: 'error', component: ErrorComponent },
 ];

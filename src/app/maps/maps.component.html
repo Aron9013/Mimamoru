@@ -1,3 +1,8 @@
-<p>
-  maps works!
-</p>
+<h2>Maps of Overwatch</h2>
+<ul class="maps">
+  <li *ngFor="let map of maps">
+    <a routerLink="/maps/{{map.id}}">
+      {{map.name}}
+    </a>
+  </li>
+</ul>

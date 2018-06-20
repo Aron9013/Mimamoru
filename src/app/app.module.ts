@@ -13,6 +13,8 @@ import { CharacterInfoComponent } from './character-info/character-info.componen
 import { CharacterService } from './services/character.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MapService } from './services/map.service';
+import { MapInfoComponent } from './map-info/map-info.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
         PlayerStatsComponent,
         ErrorComponent,
         NavigationComponent,
-        CharacterInfoComponent
+        CharacterInfoComponent,
+        MapInfoComponent
     ],
     imports: [
         BrowserModule,
@@ -32,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
         HttpClientModule
     ],
     providers: [
-        CharacterService
+        CharacterService,
+        MapService
     ],
     bootstrap: [AppComponent]
 })
