@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class PlayerStatsComponent implements OnInit {
     private _httpClient: HttpClient;
 
-    @Input() tag;
-    @Input() platform = 'pc';
-    @Input() region = 'us';
+    @Input() tag = 'jxuk';
+    @Input() platform = 'psn';
+    // @Input() region = 'eu';
 
     constructor(httpClient: HttpClient) {
         this._httpClient = httpClient;
