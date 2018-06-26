@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class PlayerStatsComponent implements OnInit {
     private _httpClient: HttpClient;
 
-    @Input() tag = 'jxuk';
+    @Input() tag = 'XiQi19';
     @Input() platform = 'psn';
-    // @Input() region = 'eu';
+    @Input() region = 'eu';
 
     constructor(httpClient: HttpClient) {
         this._httpClient = httpClient;
@@ -24,7 +24,7 @@ export class PlayerStatsComponent implements OnInit {
     }
 
     getStats(): void {
-        this._httpClient.get<any>(`https://owapi.net/api/v3/u/${this.tag}/stats?platform=${this.platform}`).subscribe((data) => {
+        this._httpClient.get<any>(`https://ovrstat.com/stats/${this.platform}/${this.tag}`).subscribe((data) => {
             console.log('stats', data);
         });
     }
@@ -39,5 +39,5 @@ export class PlayerStatsComponent implements OnInit {
     // https://github.com/Fuyukai/OWAPI
     // https://ow-api.herokuapp.com/docs/
     // https://ow-api.com/docs/#introduction  <-- doesn't seem to get any stats out?
-
+    // https://ovrstat.com/
 }
